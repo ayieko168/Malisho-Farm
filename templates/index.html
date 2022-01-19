@@ -1,0 +1,558 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	{% include 'partials/head.html' %}
+
+</head>
+
+<body>
+	<section id="header_main">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 space_all">
+					<div class="col-sm-3 space_all">
+						<div class="header_main_1">
+							<a href="{% url 'home' %}"><i class="fa fa-tree"></i>MALISHO</a>
+						</div>
+					</div>
+					<div class="col-sm-9 space_all">
+						<div class="header_main_2 clearfix">
+							<div class="col-sm-4 space_all">
+								<div class="header_main_3 clearfix">
+									<div class="col-sm-2">
+										<div class="header_main_4">
+											<i class="fa fa-map-marker"></i>
+										</div>
+									</div>
+									<div class="col-sm-10">
+										<div class="header_main_5">
+											<p>101373 - 00101<br />
+												Nairobi, Kenya</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 space_all">
+								<div class="header_main_3 clearfix">
+									<div class="col-sm-2">
+										<div class="header_main_4">
+											<i class="fa fa-mobile"></i>
+										</div>
+									</div>
+									<div class="col-sm-10">
+										<div class="header_main_5">
+											<p>0722-534-687 <br />
+												<a href="mailto:farmmalisho@gmail.com"
+													target="_blank">farmmalisho@gmail.com</a>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 space_all">
+								<div class="header_main_3 clearfix">
+									<div class="col-sm-2">
+										<div class="header_main_4">
+											<i class="fa fa-clock-o"></i>
+										</div>
+									</div>
+									<div class="col-sm-10">
+										<div class="header_main_5">
+											<p>8AM - 9PM <br />
+												*Weekends unavailable</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="header" class="cd-secondary-nav" class="clearfix">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="dropdown-thumbnail-preview">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="{% url 'home' %}">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Contact</a></li>
+
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+	</section>
+	
+	<section id="center" class="center_home">
+		<div class="banner">
+			<div id="kb" class="carousel kb_elastic animate_text kb_wrapper" data-ride="carousel" data-interval="6000"
+				data-pause="hover">
+				<!-- Wrapper-for-Slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<!-- First-Slide -->
+						<img src="{% static 'img/avocado_stand.jpg' %}" alt="" class="img-responsive">
+						<div class="carousel-caption kb_caption kb_caption_right">
+							<h1 data-animation="animated flipInX" class="">Lorem Ipsum Is Simply Dummy</h1>
+							<p data-animation="animated flipInX" class="">
+								{% lorem 34 w random %}
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<!-- Second-Slide -->
+						<img src="{% static 'img/watermellon_wide.jpg' %}" alt="" class="img-responsive">
+						<div class="carousel-caption kb_caption kb_caption_right">
+							<h1 data-animation="animated fadeInDown">{% lorem 3 w %}</h1>
+							<p data-animation="animated fadeInUp">
+								{% lorem 20 w random %}
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<!-- Third-Slide -->
+						<img src="{% static 'img/tomatoes_wide.jpg' %}" alt="" class="img-responsive">
+						<div class="carousel-caption kb_caption kb_caption_right">
+							<h1 data-animation="animated fadeInDown">{% lorem 4 w  %}</h1>
+							<p data-animation="animated fadeInUp">
+								{% lorem 14 w random %}
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Left-Button -->
+				<a class="left carousel-control kb_control_left" href="#kb" role="button" data-slide="prev">
+					<span class="fa fa-angle-left kb_icons" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<!-- Right-Button -->
+				<a class="right carousel-control kb_control_right" href="#kb" role="button" data-slide="next">
+					<span class="fa fa-angle-right kb_icons" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<script src="{% static 'js/custom.js' %}"></script>
+		</div>
+	</section>
+	
+	<br>
+
+	<section id="offers">
+		<div class="offers_1 clearfix">
+			<div class="col-sm-6 space_all">
+				<div class="offers_main clearfix">
+					<div class="offers_2 clearfix">
+						<h3>Impact Progress</h3>
+						<p>Stats on our initiative's Impact</p>
+						
+						<div style="text-align: center;">
+
+							<div class="offers_3 clearfix">
+							
+								<div class="row">
+									<div class="col-sm-5">
+										<div class="offers_4">
+											<h2>7</h2>
+											<p>Employed</p>
+										</div>
+									</div>
+									<div class="col-sm-5">
+										<div class="offers_4">
+											<h2>26</h2>
+											<p>Casuals</p>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row">
+	
+									<div class="col-sm-6">
+										<div class="offers_4">
+											<h2>> 110,000</h2>
+											<p>Payed Out (Ksh)</p>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="offers_4">
+											<h2>43,600</h2>
+											<p>Donations (Ksh)</p>
+										</div>
+									</div>
+	
+								</div>
+							</div>
+
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-6 space_all">
+				<div class="Offers_2">
+					<a href="#"><img src="{% static 'img/impuct_progress.jpg' %}" alt="abc" class="img_responsive"></a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	
+	
+	<section id="our">
+		<div class="container">
+
+			<div style="text-align: center; padding-top:10px; padding-bottom:30px">
+				<h3>AWARDS</h3>
+			</div>
+
+			<div class="row">
+				<div class="our_1 clearfix">
+					<div class="col-sm-4">
+						<div class="our_2">
+							<a href="#"><img src="{% static 'img/mbele_na_biz.png' %}" alt="abc" class="img_responsive"></a>
+							<h3 style="text-transform: uppercase;">{% lorem 2 w random %}</h3>
+							<p>Donec nec justo eget felis facilisis ferme ntum. Aliquam porttitor mauris sit amet orci.
+								Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare.</p>
+						</div>
+						
+					</div>
+					{% comment %} <div class="col-sm-4">
+						<div class="our_2">
+							<a href="#"><img src="img/9.jpg" alt="abc" class="img_responsive"></a>
+							<h3 style="text-transform: uppercase;">{% lorem 2 w random %}</h3>
+							<p>Donec nec justo eget felis facilisis ferme ntum. Aliquam porttitor mauris sit amet orci.
+								Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare.</p>
+						</div>
+						
+					</div>
+					<div class="col-sm-4">
+						<div class="our_2">
+							<a href="#"><img src="img/10.jpg" alt="abc" class="img_responsive"></a>
+							<h3 style="text-transform: uppercase;">{% lorem 2 w random %}</h3>
+							<p>Donec nec justo eget felis facilisis ferme ntum. Aliquam porttitor mauris sit amet orci.
+								Aenean dignissim pellentesque felis. Morbi in sem quis dui placerat ornare.</p>
+						</div>
+						
+					</div> {% endcomment %}
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="people" class="clearfix">
+		<div class="people_1 clearfix">
+			<div class="col-sm-6 space_all">
+				<div class="people_main_1 clearfix">
+					<div class="people_4">
+						<h4>Contact Us</h4>
+						<h2 style="text-transform: capitalize;">{% lorem 2 w random %}</h2>
+						<p>
+							{% lorem 17 w random %}
+						</p>
+					</div>
+					<div class="people_5 clearfix">
+						<div class="col-sm-6 space_all">
+							<div class="people_6">
+								<input type="text" class="form-control" placeholder="Subject">
+							</div>
+						</div>
+						<div class="col-sm-6 space_all">
+							<div class="people_6">
+								<input type="text" class="form-control" placeholder="Email">
+							</div>
+						</div>
+					</div>
+					<div class="people_5 clearfix">
+						<div class="col-sm-6 space_all">
+							<div class="people_6">
+								<input type="text" class="form-control" placeholder="Full Name">
+							</div>
+						</div>
+						<div class="col-sm-6 space_all">
+							<div class="people_6">
+								<input type="text" class="form-control" placeholder="Phone">
+							</div>
+						</div>
+					</div>
+					<div class="people_7 clearfix">
+						<div class="people_8">
+							<textarea placeholder="Message" class="form-control"></textarea>
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+			<div class="col-sm-6 space_all">
+				<div class="people_main clearfix">
+					<div class="people_2">
+						<a href="#"><img src="{% static 'img/call_back_image.png' %}" alt="abc" class="img_responsive"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<br>
+	
+	<section id="placee">
+		<div class="place_main clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="place_1">
+						<h4>Our Volunteers</h4>
+						<h2>Join Our Team</h2>
+						<p>Kasd gubergre sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+							amet,<br> consetetur sadipscing elitr, sed diam nonumy.</p>
+						<a href="#people" class="button_1">Join</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="request">
+		<div class="container">
+			<div class="row">
+				<div class="request_1 clearfix">
+					<div class="col-sm-3">
+						<div class="request_2">
+							<a href="#"><img src="{% static 'img/15.jpg' %}" alt="abc" class="img_responsive"></a>
+						</div>
+						<div class="request_3">
+							<h3>Adams Eston</h3>
+							<p>Mamber</p>
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="request_2">
+							<a href="#"><img src="{% static 'img/15.jpg' %}" alt="abc" class="img_responsive"></a>
+						</div>
+						<div class="request_3">
+							<h3>Lorem Ipsum</h3>
+							<p>cursus</p>
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="request_2">
+							<a href="#"><img src="{% static 'img/15.jpg' %}" alt="abc" class="img_responsive"></a>
+						</div>
+						<div class="request_3">
+							<h3>Integer</h3>
+							<p>lacinia</p>
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="request_2">
+							<a href="#"><img src="{% static 'img/15.jpg' %}" alt="abc" class="img_responsive"></a>
+						</div>
+						<div class="request_3">
+							<h3>Eget Nulla</h3>
+							<p>mauris</p>
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="testimonials">
+		<div class="testimonials_1 clearfix">
+			<div class="col-sm-6 space_all">
+				<div class="testimonials_2">
+					<a href="#"><img src="{% static 'img/testimonial_image.jpg' %}" alt="abc" class="img_responsive"></a>
+				</div>
+			</div>
+			<div class="col-sm-6 space_all">
+				<div class="testimonials_main clearfix">
+					<div class="testimonials_3">
+						<h3>What inspires us?</h3>
+						<h2><a href="#">Smiles are</a> true testimonials!</h2>
+						<p>Dolor sit amet, consectetuer adipiscing elit diam, sed diam nonummy nibh euismod tincidunt ut
+							laoreet dolore volutpat
+							naomi delgado conseption guertena delbirkerin suit thelrio samdorano galactico.</p>
+
+						<p>Dolor sit amet, consectetuer adipiscing elit diam, sed diam nonummy nibh euismod tincidunt ut
+							laoreet dolore volutpat
+							naomi delgado conseption guertena delbirkerin suit thelrio samdorano galactico.</p>
+					</div>
+					<div class="testimonials_4 clearfix">
+						<div class="col-sm-6 space_all">
+							<div class="testimonials_5">
+								<h3><i class="fa fa-medkit"></i>Healthy Produce</h3>
+								<p>Lorem ipsum dolor sit amet, consectuerter adipiscing elit diam,<br />
+									sed diam nonummy nibh euismod</p>
+							</div>
+						</div>
+						<div class="col-sm-6 space_all">
+							<div class="testimonials_5">
+								<h3><i class="fa fa-clock-o"></i>Garden Fresh Fruits</h3>
+								<p>Lorem ipsum dolor sit amet, consectuerter adipiscing elit diam,<br />
+									sed diam nonummy nibh euismod</p>
+							</div>
+						</div>
+					</div>
+					<div class="testimonials_4 clearfix">
+						<div class="col-sm-6 space_all">
+							<div class="testimonials_5">
+								<h3><i class="fa fa-heart"></i>Biodiversity</h3>
+								<p>Lorem ipsum dolor sit amet, consectuerter adipiscing elit diam,<br />
+									sed diam nonummy nibh euismod</p>
+							</div>
+						</div>
+						<div class="col-sm-6 space_all">
+							<div class="testimonials_5">
+								<h3><i class="fa fa-pagelines"></i>Soil Enrichment</h3>
+								<p>Lorem ipsum dolor sit amet, consectuerter adipiscing elit diam,<br />
+									sed diam nonummy nibh euismod</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	
+	
+	<section id="plant">
+		<div class="plant_1 clearfix">
+			
+
+			<div class="plant_2 clearfix">
+				<div class="col-sm-6 space_all">
+					<div class="plant_3">
+						<a href="#"><img src="{% static 'img/galarey1.jpg' %}" alt="abc" class="img_responsive"></a>
+					</div>
+				</div>
+				<div class="col-sm-6 space_all">
+					<div class="plant_3">
+						<a href="#"><img src="{% static 'img/galarey2.jpg' %}" alt="abc" class="img_responsive"></a>
+					</div>
+				</div>
+			</div>
+			<div class="plant_2 clearfix">
+				<div class="col-sm-6 space_all">
+					<div class="plant_3">
+						<a href="#"><img src="{% static 'img/galarey3.jpg' %}" alt="abc" class="img_responsive"></a>
+					</div>
+				</div>
+				<div class="col-sm-6 space_all">
+					<div class="plant_7">
+						<a href="#"><img src="{% static 'img/galarey4.jpg' %}" alt="abc" class="img_responsive"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+				
+				
+			
+		</div>
+	</section>
+	<section id="footer">
+		<div class="footer_inner clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="col-sm-3">
+							<div class="footer_1">
+								<h3>MALISHO YOUTH FARM</h3>
+								<p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+									Duis sagittis ipsum..Praesent mauris. Fusce nec tellus</p>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="footer_2">
+								<h3>MAURIS MASSA</h3>
+								<ul>
+									<li><i class="fa fa-map-marker"></i> Nairobi, Kenya</li>
+									<li><i class="fa fa-phone"></i> Phone: +257 (7) 225 34687</li>
+									<li><i class="fa fa-envelope"></i> <a href="#">farmmalisho@gmail.com									</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="footer_3">
+								<h3>SEMPER PORTA</h3>
+								<ul>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="footer_2">
+								<h3>VESTIBULUM</h3>
+							</div>
+							<div class="footer_4">
+								<p>Enter your email and we’ll send you latest..</p>
+							</div>
+							<div class="footer_3">
+								<p><input type="text" class="form-control" placeholder="Your Email Address"></p>
+								<a href="#" class="button">SIGN UP</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="footer_main" class="clearfix">
+		<div class="col-sm-12">
+			<div class="footer_main_1">
+				<p> ©<span id="year"></span> MAlisho Youth Farm. Design by<a href="http://www.github.com/ayieko168"
+						target="_blank"> Aces Technologies</a></p>
+			</div>
+		</div>
+	</section>
+	<script>
+		$(document).ready(function () {
+			/*****Fixed Menu******/
+			var secondaryNav = $('.cd-secondary-nav'),
+				secondaryNavTopPosition = secondaryNav.offset().top;
+			$(window).on('scroll', function () {
+				if ($(window).scrollTop() > secondaryNavTopPosition) {
+					secondaryNav.addClass('is-fixed');
+				} else {
+					secondaryNav.removeClass('is-fixed');
+				}
+			});
+		});
+		document.getElementById("year").innerHTML = new Date().getFullYear();
+	</script>
+</body>
