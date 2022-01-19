@@ -1,4 +1,3 @@
-from curses.ascii import HT
 from django.shortcuts import render, HttpResponse, redirect
 
 def homeView(request):
