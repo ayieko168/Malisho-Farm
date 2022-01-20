@@ -1,1 +1,1 @@
-web: gunicorn Website.wsgi --log-file -
+web: gunicorn malisho.wsgi --log-file -
